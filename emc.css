@@ -1,0 +1,19 @@
+ul{
+   
+    list-style-type: none;
+    padding:10px;
+    margin-left:60%;
+    
+}
+li{
+    display: inline;
+    margin:20px;
+}
+nav{
+background-color: black;
+color: aliceblue;
+padding: 20px;
+}
+h1,ul{
+    display:inline;
+}

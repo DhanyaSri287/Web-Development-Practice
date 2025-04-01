@@ -1,0 +1,161 @@
+<!--<p id="1">
+    Hello
+</p>
+<button onclick="change()">
+    change
+</button>
+<input id="num1">
+<input id="num2">
+<button onclick="add()">add</button>
+<p id="result">
+result
+</p>
+<script>
+   var para=document.getElementById("1");
+   console.log(para.textContent);
+   //para.textContent="bye";
+    
+    function change(){
+        para.textContent="bye";
+    
+    }
+    var n1=document.getElementById("num1")
+    var n2=document.getElementById("num2")
+    var res=document.getElementById("result")
+    function add(){
+           res.textContent=Number(n1.value)+Number(n2.value)
+    }
+</script>
+--->
+<!--Guess the number-->
+<!--<html>
+    <head><title>Number Guessing Game</title></head>
+    <body>
+       <h1>GUESS THE NUMBER</h1>
+       <input id="n">
+       <button onclick="btn()" >check</button>
+       <p id="para">
+        Let's see!
+       </p>
+    </body>
+</html>
+<script>
+    var p=document.getElementById("para");
+    var no=Math.random()*10+1;
+    function btn(){
+        var enteredno=document.getElementById("n").value;
+        if(no==enteredno)
+        {
+           p.textContent="You guessed it right";
+    }
+    else
+       p.textContent="Sorry Try again";
+
+    }
+</script>
+-->
+<!--Manipulating Css-->
+<!--<style>
+   #box{
+    background-color: black;
+    width:300px;
+    height:300px;
+   }
+   .widthmax{
+    width:700px;
+   }
+</style>
+<div id="box">
+
+</div>
+<button onclick="change()">Change</button>
+<script>
+    var box=document.getElementById("box");
+    function change(){
+         box.style.backgroundColor="blue"
+         box.setAttribute("class","widthmax")
+    }
+</script>
+-->
+<!--Tasks
+<input id="in" type="text" onkeyup="update()">
+<p id="para">
+
+</p>
+<script>
+    function update(){
+    var para=document.getElementById("para");
+    para.textContent=(document.getElementById("in")).value;
+    }
+</script>
+-->
+<!--Task2
+<button onclick="add()">add</button>
+<div id="result">
+
+</h1>
+<script>
+    var res=document.getElementById("result");
+    function add(){
+        //create new element
+        var h1=document.createElement("h1")
+        h1.textContent="Hello"
+    res.append(h1);
+    }
+</script>
+-->
+<!--Task3
+<button id="btn" onclick="change()">Change Color</button>
+<script>
+    var btn=document.getElementById("btn")
+     function change(){
+        btn.style.backgroundColor="red"
+     }
+</script>
+-->
+<!--Task4-->
+<h1 id="h">Welcome</h1>
+<!--method1<button id="btn1" onclick="change1()">John</button>
+<button id="btn2" onclick="change2()">Hi</button>
+<button id="btn3" onclick="change3()">Hello</button>
+<script>
+    var h=document.getElementById("h");
+    var btn1=document.getElementById("btn1");
+    var btn2=document.getElementById("btn2");
+    var btn3=document.getElementById("btn3");
+     function change1(){
+              h.textContent=btn1.textContent;
+     }
+     function change2(){
+              h.textContent=btn2.textContent;
+     }
+     function change3(){
+              h.textContent=btn3.textContent;
+     }
+</script>-->
+<!--method2<button onclick="update(event)">John</button>
+<button onclick="update(event)" >Agnel</button>
+<button onclick="update(event)" >Dhanya</button>
+<script>
+    var h1=document.getElementById("h")
+    
+    function update(event){
+        h1.textContent=event.target.textContent
+
+    }
+</script>
+-->
+
+<!--Task5--><!--
+<h1 id="one" onclick="deleteitem(event)">One</h1>
+<h1 id="two" onclick="deleteitem(event)">two</h1>
+<h1 id="three" onclick="deleteitem(event)">three</h1>
+<h1 id="four" onclick="deleteitem(event)">four</h1>
+<script>
+    var one=document.getElementById("one") 
+    function deleteitem(){
+        event.target.remove()
+    }
+</script>
+
+-->
