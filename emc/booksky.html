@@ -88,21 +88,21 @@
     
   </form>
   <button>Add</button>
-    <button onclick="closepopup()">cancel</button>
+    <button id="closepopup">cancel</button>
  
 </div>
-<button class="add-btn" id="add" onclick="add()">+</button>
+<button  class="add-btn" id="add-btn">+</button>
 
 <script>
   var overlay=document.querySelector(".overlay")
     var popup=document.querySelector(".popupbox")
-    var addpopupbutton=document.getElementbyId(".add-btn")
-    addpopupbutton=addeventListener("click",function(){
+    var addpopupbutton=document.getElementbyId("add-btn")
+    addpopupbutton=addEventListener("click",function(){
       overlay.style.display="block"
       popup.style.display="block" 
     }
   )
-     var cancelbtn=document.getElementById("closeup")
+     var cancelbtn=document.getElementById("closepop")
      cancel.addEventListener("click",function(event){
       event.preventdefault()
       overlay.style.display="none"
